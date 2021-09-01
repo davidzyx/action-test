@@ -10,11 +10,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Test
+      - name: Test 1
         run: |
           df -h .
           docker image ls -a
           docker image prune -a -f
           docker image ls -a
           df -h .
+
+      - name: Test 2
+        run: |
+          du -sch /*
 
