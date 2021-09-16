@@ -1,4 +1,4 @@
-name: Docker
+name: Checkout
 
 on: 
   workflow_dispatch:
